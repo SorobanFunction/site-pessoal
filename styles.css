@@ -1,0 +1,452 @@
+/* ==========================
+   CONFIGURAÇÕES GERAIS
+   ========================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #0b1220;
+    color: #e5edf7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #7bdedb;
+}
+
+a:focus-visible {
+    outline: 3px solid #a1f3ee;
+    outline-offset: 4px;
+}
+
+
+/* ==========================
+   CABEÇALHO
+   ========================== */
+
+.site-header {
+    padding: 68px 20px 60px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #082544,
+        #06334b,
+        #071a30
+    );
+    border-bottom: 1px solid #294968;
+}
+
+.header-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.eyebrow,
+.section-label {
+    color: #62d6e8;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+#titulo-principal {
+    margin: 12px 0;
+    color: #ffffff;
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+}
+
+.subtitle {
+    margin: 18px 0;
+    color: #c5d8eb;
+    font-size: 1.08rem;
+}
+
+.header-content > p:last-child {
+    max-width: 700px;
+    margin: 18px auto 0;
+    color: #d0deec;
+}
+
+
+/* ==========================
+   CONTEÚDO PRINCIPAL
+   ========================== */
+
+main {
+    width: min(960px, calc(100% - 32px));
+    margin: 38px auto;
+}
+
+.card {
+    margin-bottom: 26px;
+    padding: 32px;
+    background: #111e30;
+    border: 1px solid #263f59;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+    overflow-wrap: anywhere;
+}
+
+.card h2,
+.site-footer h2 {
+    margin: 4px 0 16px;
+    color: #7bdedb;
+    font-size: 1.7rem;
+    line-height: 1.35;
+}
+
+.card h3 {
+    margin: 26px 0 12px;
+    color: #b8e9f2;
+    font-size: 1.15rem;
+    line-height: 1.4;
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+.section-label {
+    margin-bottom: 8px;
+}
+
+.card strong {
+    color: #a9e8f0;
+}
+
+
+/* ==========================
+   APRESENTAÇÃO E FOTOGRAFIA
+   ========================== */
+
+.profile-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.9fr);
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-text {
+    min-width: 0;
+}
+
+.profile-image {
+    margin: 0;
+    padding: 10px;
+    background: #071321;
+    border: 1px solid #29445e;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.profile-image img {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.profile-image figcaption {
+    margin-top: 10px;
+    color: #a9bfd3;
+    font-size: 0.85rem;
+}
+
+
+/* ==========================
+   LISTAS DE INTERESSES
+   E OBJETIVOS
+   ========================== */
+
+.interest-list,
+.goals-list {
+    padding-left: 26px;
+}
+
+.interest-list li,
+.goals-list li {
+    margin: 12px 0;
+    padding-left: 6px;
+}
+
+.interest-list li::marker,
+.goals-list li::marker {
+    color: #62d6e8;
+    font-weight: 700;
+}
+
+.interest-list .highlight {
+    padding: 10px 12px;
+    color: #a4f0eb;
+    background: rgba(13, 164, 177, 0.12);
+    border-left: 3px solid #62d6e8;
+    border-radius: 7px;
+}
+
+
+/* ==========================
+   BIBLIOTECA MATEMÁTICA
+   ========================== */
+
+.library-note {
+    padding: 12px 15px;
+    color: #c5d5e5;
+    background: rgba(98, 214, 232, 0.07);
+    border-left: 3px solid #62d6e8;
+    border-radius: 7px;
+    font-size: 0.92rem;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin: 18px 0 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.book-list li {
+    padding: 18px;
+    background: #0b1727;
+    border: 1px solid #29445e;
+    border-radius: 12px;
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.book-list li:hover {
+    background: #102136;
+    border-color: #438b9b;
+    transform: translateY(-2px);
+}
+
+.book-list li strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #8fe9e4;
+    line-height: 1.5;
+}
+
+.book-list li p {
+    margin: 0;
+    color: #c5d5e5;
+    font-size: 0.94rem;
+}
+
+
+/* ==========================
+   BANCOS DE PROBLEMAS
+   ========================== */
+
+.olympiad-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.olympiad-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background: #0b1727;
+    border: 1px solid #29445e;
+    border-radius: 12px;
+}
+
+.olympiad-item h3 {
+    margin-top: 0;
+    color: #8fe9e4;
+}
+
+.olympiad-item p {
+    flex-grow: 1;
+    color: #c5d5e5;
+}
+
+.olympiad-item a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 13px;
+    color: #07151d;
+    background: #7bdedb;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.olympiad-item a:hover {
+    background: #a1f3ee;
+    transform: translateY(-2px);
+}
+
+.olympiad-item a span {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 400;
+}
+
+
+/* ==========================
+   RODAPÉ E LINKS
+   ========================== */
+
+.site-footer {
+    padding: 38px 20px 24px;
+    background: #080e18;
+    border-top: 1px solid #26384e;
+    text-align: center;
+}
+
+.site-footer h2 {
+    margin-top: 0;
+}
+
+.site-footer > p {
+    max-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.site-footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 24px auto;
+}
+
+.site-footer a {
+    display: inline-block;
+    padding: 11px 16px;
+    color: #07151d;
+    background: #7bdedb;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.site-footer a:hover {
+    background: #a1f3ee;
+    transform: translateY(-2px);
+}
+
+.site-footer a span {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 400;
+}
+
+.copyright {
+    margin: 28px 0 0;
+    color: #8fa5bb;
+    font-size: 0.85rem;
+}
+
+
+/* ==========================
+   RESPONSIVIDADE
+   ========================== */
+
+@media (max-width: 650px) {
+
+    .site-header {
+        padding: 46px 18px;
+    }
+
+    main {
+        width: min(calc(100% - 24px), 960px);
+        margin: 24px auto;
+    }
+
+    .card {
+        padding: 22px;
+        border-radius: 14px;
+    }
+
+    .profile-section {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .profile-image {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .card h2,
+    .site-footer h2 {
+        font-size: 1.45rem;
+    }
+
+    .card h3 {
+        font-size: 1.08rem;
+    }
+
+    .book-list,
+    .olympiad-list {
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer nav {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 360px;
+    }
+
+    .site-footer a {
+        text-align: center;
+    }
+}
+
+
+/* ==========================
+   ACESSIBILIDADE
+   ========================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
